@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neteasetaskfix">
+
+    <application
+        android:label="任务修复"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true">
+        
+        <!-- Xposed 模块标识 -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        
+        <meta-data
+            android:name="xposeddescription"
+            android:value="修复网易云音乐/荣耀音乐在车机上的画中画问题" />
+        
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+        
+        <!-- LSPosed 作用域声明 -->
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+        
+    </application>
+
+</manifest>
